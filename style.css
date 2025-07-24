@@ -1,10 +1,20 @@
-@import url('https://fonts.cdnfonts.com/css/swiss-721');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@font-face {
+    font-family: Swiss721BT-Light;
+    src: url(fonts/Swiss721BT-Light.otf);
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Swiss721BT-Light;
+    src: url(fonts/Swiss721BT-Medium.otf);
+    font-weight: 500;
+    font-style: normal;
+}
 
 
 :root {
     --swiss721: 'Swiss 721', sans-serif;
-    --inter: "Inter", sans-serif;
     --primaryColor: #415d8e;
     --secondaryColor: #d1dff1;
     --textPrimaryColor: #231C19;
@@ -25,7 +35,7 @@ html {
 }
 
 body {	
-    font-family: var(--inter);
+    font-family: Swiss721BT-Light;
     font-size: 16px;
     font-weight: 300;    
 	color: var(--textPrimaryColor);	
@@ -40,7 +50,8 @@ h5,
 h6 {
     margin: 0;
     text-transform: uppercase;
-    font-family: var(--swiss721);
+    font-family: Swiss721BT-Light;
+    font-weight: 500;
 }
 
 p {
@@ -137,7 +148,7 @@ input::-webkit-inner-spin-button {
 }
 
 .font-semibold {
-    font-weight: 600 !important;
+    font-weight: 500 !important;
 }
 
 .bg-included {
@@ -222,9 +233,14 @@ input::-webkit-inner-spin-button {
     position: relative;
 }
 
-.header-hero-wrap > img {
+.header-hero-wrap .home-header-media-wrapper {
     width: 100%;
-    max-height: calc(100vh - 36px);
+    height: calc(100vh - 36px);
+}
+
+.header-hero-wrap .home-header-media-wrapper img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -265,7 +281,7 @@ input::-webkit-inner-spin-button {
 
 .header-navbar {
     position: absolute;
-    top: 58px;
+    top: 16px;
     left: 0;
     z-index: 99;
     width: 100%;
@@ -291,6 +307,7 @@ input::-webkit-inner-spin-button {
     font-family: var(--inter);
     cursor: pointer;
     padding: 0;
+    font-weight: 300;
 }
 
 .navbar-link-hover {
@@ -468,24 +485,10 @@ input::-webkit-inner-spin-button {
     background-color: #fff;
     transition: right 0.3s ease;
     z-index: 1000;
-    overflow-y: scroll;
-    scrollbar-width: none;
 }
 
 .sidebar.active {
     right: 0;
-}
-
-#sidebar-1 .sd-checkout-button button {
-    margin-bottom: 16px;
-}
-
-.sidebar-content-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: calc(100vh - 174px);
-    gap: 40px;
 }
 
 .sidebar-header {
@@ -728,7 +731,7 @@ input::-webkit-inner-spin-button {
     color: #fff;
     background: #231C19;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 15px;
     display: flex;
     justify-content: center;
@@ -1291,7 +1294,8 @@ input::-webkit-inner-spin-button {
     background-color: var(--textPrimaryColor);
     color: #fff;
     display: inline-block;
-    padding: 3px 8px;
+    padding: 2px 8px;
+    padding-top: 3px;
 }
 
 .coll-product-show-wrap .single-product-wrap {
@@ -1389,7 +1393,7 @@ input::-webkit-inner-spin-button {
 }
 
 .single-bundle-card .price {
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .single-bundle-card.active {
@@ -1520,7 +1524,7 @@ input::-webkit-inner-spin-button {
   gap: 6px;
   background: none;
   border: none;
-  font-weight: 600;
+  font-weight: 500;
   cursor: pointer;
   margin-top: 10px;
   font-family: var(--inter);
@@ -1554,7 +1558,7 @@ input::-webkit-inner-spin-button {
 .single-product-content-wrap .find-your-shade button {
     font-family: var(--inter);
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
     text-decoration: underline;
     cursor: pointer;
 }
@@ -1635,7 +1639,7 @@ input::-webkit-inner-spin-button {
     color: #fff;
     background: #231C19;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 15px;
     display: flex;
     justify-content: center;
@@ -1731,7 +1735,7 @@ input::-webkit-inner-spin-button {
 }
 
 .single-row .htu-right-content ul h4 {
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .single-row .htu-right-content ul li {
@@ -1788,7 +1792,7 @@ input::-webkit-inner-spin-button {
     display: flex;
     gap: 6px;
     align-items: center;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 
@@ -1841,7 +1845,7 @@ input::-webkit-inner-spin-button {
 }
 
 .custo-review-top-right .review-retting li {
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .custo-review-main-cont {
@@ -1934,7 +1938,7 @@ input::-webkit-inner-spin-button {
 .condition-right-col .content ul h5 {
     font-size: 16px;
     text-transform: capitalize;
-    font-weight: 600;
+    font-weight: 500;
     font-family: var(--inter);
     padding-bottom: 4px;
 }
@@ -2001,4 +2005,40 @@ input::-webkit-inner-spin-button {
 
 .condition-right-col .faq-main-col {
     max-width: 694px;
+}
+
+/* updated code here */
+.sd-product-vanue {
+    margin-top: 8px;
+    position: sticky;
+    top: auto;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.sd-product-vanue .sd-checkout-button {
+    margin-top: 16px;
+}
+.sd-product-vanue .sd-checkout-button button {
+    width: 100%;
+}
+.sidebar-content-wrapper {
+    max-height: 576px;
+    overflow: auto;
+    scrollbar-width: thin;
+}
+
+.sidebar-content-wrapper.sidebar-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100vh - 82px);
+    max-height: 100%;
+    padding-bottom: 16px;
+}
+
+.card-sd-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 155px);
 }

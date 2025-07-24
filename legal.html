@@ -22,21 +22,23 @@
 	</head>
 	<body>
 
-		<!-- header-area -->	
-		<header class="headder-area">
-			<div class="header-top-bar">
-				<div class="container">
-					<div class="header-top-bar-inner">
-						<div>
-							<p class="menu-toggle" data-target="sidebar-1">Free shipping over €50 euro’s</p>
-						</div>
-						<div>
-							<p>+</p>
-						</div>
+		<!-- header top area -->
+		 <div class="header-top-bar">
+			<div class="container">
+				<div class="header-top-bar-inner">
+					<div>
+						<p class="menu-toggle" data-target="sidebar-1">Free shipping over €50 euro’s</p>
+					</div>
+					<div>
+						<p>+</p>
 					</div>
 				</div>
 			</div>
+		</div>
+		<!-- header top area -->
 
+		<!-- header-area -->	
+		<header class="headder-area">
 			<!-- navbar area -->
 			<nav class="header-navbar">
 				<div class="container">
@@ -74,49 +76,92 @@
 					</div>
 				</div>
 			</nav>
+			<!-- Mobile menu  -->
+			<div class="mobile-menubar-pop-wrapper">
+				<div id="offcanvas" class="offcanvas-menu">
+					<div>
+						<div class="offcanvas-header">
+							<h2>
+								<a href="index.html">
+									<img src="images/brand-logo.svg" alt="">
+								</a>
+							</h2>
+							<button class="close-btn">
+								<svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M11 11C11 11 21.4989 21.4993 28.9999 29" stroke="#231C19"/>
+								<path d="M11 28.9999L29.0001 11" stroke="#231C19"/>
+								</svg>
+							</button>
+			
+						</div>
+						<nav>
+							<ul>
+								<li><a class="navbar-link-hover" href="#">New & Notable</a></li>
+								<li><a class="navbar-link-hover" href="#">Grooming</a></li>
+								<li><a class="navbar-link-hover" href="#">Tanning</a></li>
+								<li><a class="navbar-link-hover" href="#">Skincare</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="offcanvas-footer">
+						<div class="country-picker">
+							<figure>
+								<img src="images/flag.png" alt="">
+							</figure>
+							<span >NL (EUR€)</span>
+						</div>
+					</div>
+				</div>
+				<div class="nav-overlay"></div>
+			</div>
+			<!-- Mobile menu  -->
 		</header>	
 		<!-- header-area -->
 
-		<!-- Mobile menu  -->
-		<div id="offcanvas" class="offcanvas-menu">
-			<div>
-				<div class="offcanvas-header">
-					<h2>
-						<a href="index.html">
-							<img src="images/brand-logo.svg" alt="">
-						</a>
-					</h2>
-					<button class="close-btn">
-						<svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M11 11C11 11 21.4989 21.4993 28.9999 29" stroke="#231C19"/>
-						<path d="M11 28.9999L29.0001 11" stroke="#231C19"/>
-						</svg>
-					</button>
-	
-				</div>
-				<nav>
-					<ul>
-						<li><a class="navbar-link-hover" href="#">New & Notable</a></li>
-						<li><a class="navbar-link-hover" href="#">Grooming</a></li>
-						<li><a class="navbar-link-hover" href="#">Tanning</a></li>
-						<li><a class="navbar-link-hover" href="#">Skincare</a></li>
-					</ul>
-				</nav>
+		<!-- Terms and condition-area -->	
+		<section class="condition-content-wrap">
+			<div class="container">
+				<div class="row gap-x-40">
+                    <div class="col-lg-6">
+                        <div class="condition-left-col">
+                            <h2>terms & conditions</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="condition-right-col">
+                            <h4>article 1</h4>
+                            <div class="content">
+                                <div>
+                                    <p>Made in Nijmegen, the Netherlands — where precision grooming meets European craftsmanship. Designed for men, our products combine clean formulas with high-performance results you can trust.</p>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <h5>Invisible coverage</h5> 
+                                         Our natural pigments adapt to your skintone, so that no one will notice you’re wearing something.
+                                    </li>
+                                    <li>
+                                        <h5>Designed for men’s skin</h5> 
+                                        We’ve crafted the concealing gel with the men in mind. We offer lightweight gel.
+                                    </li>
+                                    <li>
+                                        <h5>Easy application</h5>
+                                        Super easy to use with your hands and finished within 10 seconds.
+                                    </li>
+                                </ul>
+                                <div>
+                                    <p>Designed for men, our products combine clean formulas with high-performance results you can trust. Made in Nijmegen, the Netherlands — where precision grooming meets European craftsmanship. Designed for men, our products combine clean formulas with high-performance results you can trust.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 			</div>
-			<div class="offcanvas-footer">
-				<div class="country-picker">
-					<figure>
-						<img src="images/flag.png" alt="">
-					</figure>
-					<span >NL (EUR€)</span>
-				</div>
-			</div>
-		</div>
-		<div class="nav-overlay"></div>
-		<!-- Mobile menu  -->
+		</section>	
+		<!-- Terms and condition-area -->
 
 		<!-- Card Sidebar -->
-		<aside class="sidebar" id="sidebar-1">
+		 <aside class="cart-drawer-wrapper">
+			<div class="sidebar" id="sidebar-1">
 			<div class="sidebar-header">
 				<div class="sd-header-top">
 					<h2 class="secondary-heading">cart</h2>
@@ -134,9 +179,10 @@
 					</div>
 				</div>
 			</div>
-			<div class="sidebar-content-wrapper">
+			<div class="card-sd-content-wrapper">
+				<div class="sidebar-content-wrapper">
 				<!-- selection product wrapper  -->
-				<div>
+				<div class="sidebar-selection-products">
 					<!-- selection single product -->
 					<div class="sd-selection-product">
 						<div class="single-product-inner">
@@ -179,7 +225,7 @@
 								<div class="sd-single-content">
 									<div>
 										<h3>concealing gel+</h3>
-										<p>Shade: Medium</p>
+										<p>Shade: Light</p>
 									</div>
 									<div>
 									<div class="input-group">
@@ -192,8 +238,40 @@
 							</div>
 							<div class="sd-right-sec">
 								<div class="sd-product-price">
-									<p>€78</p>
-									<span>€98</span>
+									<p>€39</p>
+									<span>€49</span>
+								</div>
+								<div class="product-remove">
+									<button>Remove</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- selection single product -->
+					<div class="sd-selection-product">
+						<div class="single-product-inner">
+							<div class="sd-left-sec">
+								<div class="sd-single-img">
+									<img src="images/ff-product-01.png" alt="">
+								</div>
+								<div class="sd-single-content">
+									<div>
+										<h3>concealing gel+</h3>
+										<p>Shade: Light</p>
+									</div>
+									<div>
+									<div class="input-group">
+										<input type="button" value="—" class="button-minus border rounded-circle  icon-shape icon-sm mx-1 " data-field="quantity">
+										<input type="number" step="1" max="10" value="1" name="quantity" class="quantity-field border-0 text-center">
+										<input type="button" value="+" class="button-plus border rounded-circle icon-shape icon-sm lh-0" data-field="quantity">
+									</div>
+									</div>
+								</div>
+							</div>
+							<div class="sd-right-sec">
+								<div class="sd-product-price">
+									<p>€39</p>
+									<span>€49</span>
 								</div>
 								<div class="product-remove">
 									<button>Remove</button>
@@ -202,7 +280,6 @@
 						</div>
 					</div>
 				</div>
-
 				<!-- card sidebar slider -->
 				<div class="sd-prodict-slider-wrapper">
 					<div class="swiper mySwiper sd-product-slider">
@@ -365,132 +442,95 @@
 						</div>
 						<div class="swiper-pagination sd-pagination"></div>
 					</div>
+				</div>	
+				</div>
 
-					<div class="sd-product-vanue">
-						<ul>
-							<li>
-								<h4>Subtotal</h4>
-								<h4>€117</h4>
-							</li>
-							<li>
-								<p>Shipping</p>
-								<p>€4,95</p>
-							</li>
-							<li>
-								<h4 class="capitalize">Saving</h4>
-								<h4>-€30</h4>
-							</li>
-						</ul>
-						<div class="sd-free-returns">
-							<span>
-								<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M8.02513 2.66669C5.30718 2.66669 3.00888 5.01361 2.6665 7.62965L3.55961 7.85187C3.84509 5.67058 5.75152 3.55558 8.02513 3.55558C9.26068 3.55558 10.3698 4.05715 11.1772 4.86287L10.2579 5.7778L12.9372 6.22224L12.4907 3.55558L11.8077 4.23526C10.8387 3.27004 9.5029 2.66669 8.02513 2.66669Z" fill="#231C19"/>
-								<path d="M12.4479 8.57901C12.1624 10.7603 10.2987 12.4445 8.02513 12.4445C6.67561 12.4445 5.47923 11.8446 4.66029 10.9045L5.34582 10.2222L2.6665 9.7778L3.11306 12.4445L4.02796 11.5339C5.00879 12.6323 6.43365 13.3334 8.02513 13.3334C10.7431 13.3334 12.9908 11.3096 13.3332 8.6936L12.4479 8.57901Z" fill="#231C19"/>
-								</svg>
-							</span>
-							<p>30-day hassle free returns</p>
-						</div>
+				<div class="sd-product-vanue mt-auto">
+					<ul>
+						<li>
+							<h4>Subtotal</h4>
+							<h4>€117</h4>
+						</li>
+						<li>
+							<p>Shipping</p>
+							<p>€4,95</p>
+						</li>
+						<li>
+							<h4 class="capitalize">Saving</h4>
+							<h4>-€30</h4>
+						</li>
+					</ul>
+					<div class="sd-free-returns">
+						<span>
+							<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M8.02513 2.66669C5.30718 2.66669 3.00888 5.01361 2.6665 7.62965L3.55961 7.85187C3.84509 5.67058 5.75152 3.55558 8.02513 3.55558C9.26068 3.55558 10.3698 4.05715 11.1772 4.86287L10.2579 5.7778L12.9372 6.22224L12.4907 3.55558L11.8077 4.23526C10.8387 3.27004 9.5029 2.66669 8.02513 2.66669Z" fill="#231C19"/>
+							<path d="M12.4479 8.57901C12.1624 10.7603 10.2987 12.4445 8.02513 12.4445C6.67561 12.4445 5.47923 11.8446 4.66029 10.9045L5.34582 10.2222L2.6665 9.7778L3.11306 12.4445L4.02796 11.5339C5.00879 12.6323 6.43365 13.3334 8.02513 13.3334C10.7431 13.3334 12.9908 11.3096 13.3332 8.6936L12.4479 8.57901Z" fill="#231C19"/>
+							</svg>
+						</span>
+						<p>30-day hassle free returns</p>
 					</div>
 					<div class="sd-checkout-button">
 						<button>checkout securely</button>
 					</div>
-				</div>	
+				</div>
 			</div>
-		</aside>
-		<div class="overlay" data-target="sidebar-1"></div>
-
+			</div>
+			<div class="overlay" data-target="sidebar-1"></div>
+		 </aside>
+		
 		<!-- Sidebar 2 -->
-		<aside class="sidebar" id="sidebar-2">
-			<div class="sidebar-header">
-				<div class="sd-header-top">
-					<h2 class="secondary-heading hidden">cart</h2>
-					<button class="close-btn" data-target="sidebar-2">
-						<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M3 3.0001C3 3.0001 12.3324 12.3328 18.9999 19.0001" stroke="#231C19"/>
-						<path d="M3 19L19.0001 3.00003" stroke="#231C19"/>
-						</svg>
-					</button>
-				</div>
-			</div>
-			<div class="sidebar-content-wrapper sidebar-two">
-				<div>
-					<div class="sd2-top-cont">
-						<h2 class="pb-2">upgrade your routine</h2>
-						<p>Make sure you use our best products to combine with your current routine.</p>
-					</div>
-					<div class="product-varients-wrap">
-						<div class="product-img">
-							<img src="images/ff-product-01.png" alt="">
-						</div>
-						<div class="product-content">
-							<h4>tandrops+</h4>
-							<div class="d-flex align-items-center">
-								<p class="product-price">+€39</p>
-								<p class="regular-price">€49</p>
-							</div>
-							<div class="product-shade">
-								<p>Shade:</p>
-								<p>Fair tan</p>
-							</div>
-							<div class="product-veriants-picker">
-								<div class="veriant veriant01"></div>
-								<div class="veriant veriant02 active"></div>
-								<div class="veriant veriant03"></div>
-								<div class="veriant veriant04"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="mt-auto">
-					<div class="sd-checkout-button">
-						<button>Add to order - €39</button>
-						<button class="skip-card close-btn mb-0" data-target="sidebar-2">skip & view cart</button>
-					</div>
-				</div>
-			</div>
-		</aside>
-		<div class="overlay" data-target="sidebar-2"></div>
-
-		<!-- Terms and condition-area -->	
-		<section class="condition-content-wrap">
-			<div class="container">
-				<div class="row gap-x-40">
-                    <div class="col-lg-6">
-                        <div class="condition-left-col">
-                            <h2>terms & conditions</h2>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="condition-right-col">
-                            <h4>article 1</h4>
-                            <div class="content">
-                                <div>
-                                    <p>Made in Nijmegen, the Netherlands — where precision grooming meets European craftsmanship. Designed for men, our products combine clean formulas with high-performance results you can trust.</p>
-                                </div>
-                                <ul>
-                                    <li>
-                                        <h5>Invisible coverage</h5> 
-                                         Our natural pigments adapt to your skintone, so that no one will notice you’re wearing something.
-                                    </li>
-                                    <li>
-                                        <h5>Designed for men’s skin</h5> 
-                                        We’ve crafted the concealing gel with the men in mind. We offer lightweight gel.
-                                    </li>
-                                    <li>
-                                        <h5>Easy application</h5>
-                                        Super easy to use with your hands and finished within 10 seconds.
-                                    </li>
-                                </ul>
-                                <div>
-                                    <p>Designed for men, our products combine clean formulas with high-performance results you can trust. Made in Nijmegen, the Netherlands — where precision grooming meets European craftsmanship. Designed for men, our products combine clean formulas with high-performance results you can trust.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-			</div>
-		</section>	
-		<!-- Terms and condition-area -->
+		 <aside class="sidebar-two-wrapper">
+			 <div class="sidebar" id="sidebar-2">
+				 <div class="sidebar-header">
+					 <div class="sd-header-top">
+						 <h2 class="secondary-heading hidden">cart</h2>
+						 <button class="close-btn" data-target="sidebar-2">
+							 <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+							 <path d="M3 3.0001C3 3.0001 12.3324 12.3328 18.9999 19.0001" stroke="#231C19"/>
+							 <path d="M3 19L19.0001 3.00003" stroke="#231C19"/>
+							 </svg>
+						 </button>
+					 </div>
+				 </div>
+				 <div class="sidebar-content-wrapper sidebar-two">
+					 <div>
+						 <div class="sd2-top-cont">
+							 <h2 class="pb-2">upgrade your routine</h2>
+							 <p>Make sure you use our best products to combine with your current routine.</p>
+						 </div>
+						 <div class="product-varients-wrap">
+							 <div class="product-img">
+								 <img src="images/ff-product-01.png" alt="">
+							 </div>
+							 <div class="product-content">
+								 <h4>tandrops+</h4>
+								 <div class="d-flex align-items-center">
+									 <p class="product-price">+€39</p>
+									 <p class="regular-price">€49</p>
+								 </div>
+								 <div class="product-shade">
+									 <p>Shade:</p>
+									 <p>Fair tan</p>
+								 </div>
+								 <div class="product-veriants-picker">
+									 <div class="veriant veriant01"></div>
+									 <div class="veriant veriant02 active"></div>
+									 <div class="veriant veriant03"></div>
+									 <div class="veriant veriant04"></div>
+								 </div>
+							 </div>
+						 </div>
+					 </div>
+					 <div class="mt-auto">
+						 <div class="sd-checkout-button">
+							 <button>Add to order - €39</button>
+							 <button class="skip-card close-btn mb-0" data-target="sidebar-2">skip & view cart</button>
+						 </div>
+					 </div>
+				 </div>
+			 </div>
+			 <div class="overlay" data-target="sidebar-2"></div>
+		 </aside>
 
 		<!-- footer-area -->	
 		<footer class="footer-area-wrap inner-spacer">
@@ -560,17 +600,12 @@
 									</div>
 									<div class="accordion__content">
 										<ul class="submenu">
-											<li>
-												<a class="link-hover" href="#">Support</a>
-											</li>
-											<li>
-												<a class="link-hover" href="#">FAQ</a>
-											</li>
-											<li>
-												<a class="link-hover" href="#">Shipping & Returns</a>
-											</li>
+											<li><a class="link-hover" href="product.html">Product</a></li>
+											<li><a class="link-hover" href="collection.html">Collection</a></li>
+											<li><a class="link-hover" href="faq.html">FAQ</a></li>
+											<li><a class="link-hover" href="contact-us.html">Contact Us</a></li>
+											<li><a class="link-hover" href="legal.html">Terms & Conditions</a></li>
 										</ul>
-										
 									</div>
 								</div>
 								<div class="accordion">

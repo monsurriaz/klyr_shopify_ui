@@ -209,9 +209,6 @@ p {
     width: 382px;
     height: 100%;
 }
-.sd-checkout-button button {
-    margin-bottom: 16px;
-}
 .sd-product-single-slide .sd-slide-content {
 	font-size: 12px;
 }
@@ -266,7 +263,7 @@ p {
 }
 
 .header-navbar {
-    top: 52px;
+    top: 16px;
 }
 /*======= product page design =======*/
 .single-product-content-wrap .top-contents {
@@ -328,7 +325,7 @@ Xtra Small Screen - Small Mobile
 */
 @media screen and (max-width: 767px) {
 .gap-x-40 {
-    row-gap: 26px;
+    row-gap: 32px;
 }
 .header-navbar .navbar-inner {
 	padding: 12px;
@@ -342,8 +339,11 @@ Xtra Small Screen - Small Mobile
 .header-hero-content .inner-content p br {
     display: none;
 }
-.header-hero-wrap > img {
-    min-height: 75vh;
+.header-hero-wrap .home-header-media-wrapper {
+    height: 75vh;
+}
+.header-hero-wrap .home-header-media-wrapper img {
+    height: 100%;
     object-position: 35% 100%;
 }
 /* favourite-formulation-wp design */
