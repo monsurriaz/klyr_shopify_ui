@@ -72,36 +72,43 @@ setupAccordions(".footer-links-acc");
 
 
 
-// Offcanvas sidebar
+function updateBodyScroll() {
+  const anySidebarActive = document.querySelectorAll(".sidebar.active").length > 0;
+  document.body.style.overflow = anySidebarActive ? "hidden" : "";
+}
+
 document.querySelectorAll(".menu-toggle").forEach((btn) => {
   btn.addEventListener("click", () => {
     const targetId = btn.getAttribute("data-target");
     document.getElementById(targetId).classList.add("active");
 
-    // Activate related overlay
     document.querySelector(`.overlay[data-target="${targetId}"]`).classList.add("active");
+
+    updateBodyScroll();
   });
 });
 
-// Close sidebar
 document.querySelectorAll(".close-btn").forEach((btn) => {
   btn.addEventListener("click", () => {
     const targetId = btn.getAttribute("data-target");
     document.getElementById(targetId).classList.remove("active");
 
-    // Deactivate related overlay
     document.querySelector(`.overlay[data-target="${targetId}"]`).classList.remove("active");
+
+    updateBodyScroll();
   });
 });
 
-// Close on overlay click
 document.querySelectorAll(".overlay").forEach((overlay) => {
   overlay.addEventListener("click", () => {
     const targetId = overlay.getAttribute("data-target");
     document.getElementById(targetId).classList.remove("active");
     overlay.classList.remove("active");
+
+    updateBodyScroll();
   });
 });
+
 
 
 // product increment decrement
