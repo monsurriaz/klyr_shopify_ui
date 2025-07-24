@@ -1,20 +1,21 @@
 @font-face {
-    font-family: Swiss721BT-Light;
-    src: url(fonts/Swiss721BT-Light.otf);
+    font-family: 'Swiss721BT-Light';
+    src: url(fonts/Swiss721BT-Light.woff2);
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
-    font-family: Swiss721BT-Light;
-    src: url(fonts/Swiss721BT-Medium.otf);
+    font-family: 'Swiss721BT-Medium';
+    src: url(fonts/Swiss721BT-Medium.woff2);
     font-weight: 500;
     font-style: normal;
 }
 
 
 :root {
-    --swiss721: 'Swiss 721', sans-serif;
+    --swiss721BTLight: 'Swiss721BT-Light';
+    --swiss721BTMedium: 'Swiss721BT-Medium';
     --primaryColor: #415d8e;
     --secondaryColor: #d1dff1;
     --textPrimaryColor: #231C19;
@@ -35,7 +36,7 @@ html {
 }
 
 body {	
-    font-family: Swiss721BT-Light;
+    font-family: var(--swiss721BTLight), sans-serif;
     font-size: 16px;
     font-weight: 300;    
 	color: var(--textPrimaryColor);	
@@ -50,7 +51,7 @@ h5,
 h6 {
     margin: 0;
     text-transform: uppercase;
-    font-family: Swiss721BT-Light;
+    font-family: var(--swiss721BTMedium), sans-serif;
     font-weight: 500;
 }
 
