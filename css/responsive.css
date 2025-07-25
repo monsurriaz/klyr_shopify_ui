@@ -1,46 +1,47 @@
+:root {
+  --inline-padding: 1.5rem;
+}
+
 /*
 ====================================
 large Screen - Others
 ====================================
 */
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
-/* favourite-formulation-wp design */
-.ff-content-col a {
+  /* global style */
+  .large-space-right {
+    padding-right: calc((var(--full-width) - 1140px + var(--inline-padding)) / 2);
+  }
+  .large-space-left {
+    padding-left: calc((var(--full-width) - 1140px + var(--inline-padding)) / 2);
+  }
+  /* favourite-formulation-wp design */
+  .ff-content-col a {
     font-size: 15px;
-}
-.ff-product-slider-wrap {
+  }
+  .ff-product-slider-wrap {
     margin-left: 50px;
-}
-.ff-content-col {
+  }
+  .ff-content-col {
     margin-right: -45px;
-}
-.favourite-formulation-wp .swiper-pagination {
-    max-width: 1140px;
-}
- /* skincare range-area design */
-.sr-right-content {
+  }
+  /*======= product page design =======*/
+  .single-product-content-wrap {
     padding-right: calc((100vw - 1140px) / 2);
-}
-/*======= product page design =======*/
-.single-product-content-wrap {
-    padding-right: calc((100vw - 1140px) / 2);
-}
-/* product-PPslider area design */
-.product-PPslider .swiper {
-   margin-left: calc((100vw - 1140px) / 2);
-}
-/* how to use-area design */
-.htu-right-content {
+  }
+  /* product-PPslider area design */
+  .product-PPslider .swiper {
+    margin-left: calc((100vw - 1140px) / 2);
+  }
+  /* how to use-area design */
+  .htu-right-content {
     padding-right: calc((100vw - 1140px) / 2);
     padding-left: 90px;
-}
-.single-row.single-row-reverse .htu-right-content {
+  }
+  .single-row.single-row-reverse .htu-right-content {
     padding-left: calc((100vw - 1140px) / 2);
     padding-right: 90px;
-}
-
-
-
+  }
 }
 
 /*
@@ -49,82 +50,78 @@ Medium Screen - Others
 ====================================
 */
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-.gap-x-40 {
+  /* global style */
+  .large-space-right {
+    padding-right: calc((var(--full-width) - 960px + var(--inline-padding)) / 2);
+  }
+  .large-space-left {
+    padding-left: calc((var(--full-width) - 960px + var(--inline-padding)) / 2);
+  }
+  .gap-x-40 {
     row-gap: 50px;
-}
-/* navbar design */
-.main-menu ul {
-	gap: 42px;
-}
-/* favourite-formulation-wp design */
-.ff-content-col a {
+  }
+  /* navbar design */
+  .main-menu ul {
+    gap: 42px;
+  }
+  /* favourite-formulation-wp design */
+  .ff-content-col a {
     font-size: 15px;
-}
-.ff-product-slider-wrap {
+  }
+  .ff-product-slider-wrap {
     margin-left: 50px;
-}
-.ff-content-col {
+  }
+  .ff-content-col {
     margin-right: -45px;
-}
-.favourite-formulation-wp .swiper-pagination {
-    max-width: 960px;
-}
-.section-spacer {
-	padding-block: 110px;
-}
-/* discover-cetagory-area design */
-.discover-cetagory-area {
-    margin-top: -40px;
-}
- /* skincare range-area design */
-.sr-right-content {
+  }
+  .section-spacer {
+    padding-block: 110px;
+  }
+  /* skincare range-area design */
+  .secondary-heading {
+    font-size: 27px;
+  }
+  /*======= Collection page design =======*/
+  .coll-product-show-wrap .product-img-wrap img {
+    padding-top: 45px;
+  }
+  /*======= product page design =======*/
+  .single-product-content-wrap {
     padding-right: calc((100vw - 960px) / 2);
-}
-.secondary-heading {
-	font-size: 27px;
-}
-/*======= Collection page design =======*/
-.coll-product-show-wrap .product-img-wrap img {
-	padding-top: 45px;
-}
-/*======= product page design =======*/
-.single-product-content-wrap {
-  padding-right: calc((100vw - 960px) / 2);
-  padding-top: 135px;
-}
-.single-product-content-wrap .top-contents {
-	gap: 22px;
-}
-.single-product-content-wrap .add-to-cart-btn {
-	padding-block: 32px;
-}
-.tabs-menu {
-	column-gap: 10px;
-}
-/* product-PPslider area design */
-.product-PPslider .swiper {
-   margin-left: calc((100vw - 960px) / 2);
-}
-/* how to use-area design */
-.htu-right-content {
+    padding-top: 135px;
+  }
+  .single-product-content-wrap .top-contents {
+    gap: 22px;
+  }
+  .single-product-content-wrap .add-to-cart-btn {
+    padding-block: 32px;
+  }
+  .tabs-menu {
+    column-gap: 10px;
+  }
+  /* product-PPslider area design */
+  .product-PPslider .swiper {
+    margin-left: calc((100vw - 960px) / 2);
+  }
+  /* how to use-area design */
+  .htu-right-content {
     padding-left: 64px;
     padding-right: calc((100vw - 960px) / 2);
     height: 100%;
-}
-.single-row.single-row-reverse .htu-right-content {
-   padding-right: 64px;
+  }
+  .single-row.single-row-reverse .htu-right-content {
+    padding-right: 64px;
     padding-left: calc((100vw - 960px) / 2);
-}
-/* review-area design */
-.custo-review-main-cont .custo-profile {
-	flex: 0 0 80px;
-	width: 80px;
-}
-/* Legal page design */
-.condition-left-col h2 {
-	font-size: 37px;
-}
-
+  }
+  /* review-area design */
+  .custo-review-main-cont .custo-profile {
+    flex: 0 0 80px;
+    width: 80px;
+  }
+  /* Legal page design */
+  .condition-left-col h2 {
+    font-size: 37px;
+  }
 }
 
 /*
@@ -133,190 +130,197 @@ Small Screen - Tablate
 ====================================
 */
 @media screen and (min-width: 768px) and (max-width: 991px) {
-.gap-x-40 {
+  /* global css */
+  .large-space-right {
+    padding-left: calc((var(--full-width) - 720px + var(--inline-padding)) / 2);
+    padding-right: calc((var(--full-width) - 720px + var(--inline-padding)) / 2);
+  }
+  .large-space-left {
+    padding-left: calc((var(--full-width) - 720px + var(--inline-padding)) / 2);
+    padding-right: calc((var(--full-width) - 720px + var(--inline-padding)) / 2);
+  }
+  .gap-x-40 {
     row-gap: 40px;
-}
-.header-top-bar-inner {
+  }
+  /* header top area */
+  .header-top-bar-inner {
     justify-content: space-between;
-}
-.header-hero-content .inner-content h2 {
+  }
+  .header-hero-content .inner-content h2 {
     font-size: 48px;
-}
-.header-hero-content .inner-content p br {
+  }
+  .header-hero-content .inner-content p br {
     display: none;
-}
-/* favourite-formulation-wp design */
-.favourite-formulation-wp .swiper-pagination {
-    max-width: 700px;
-}
-.single-product-card .product-overlay-btn a.addToCard {
-	font-size: 14px;
-}
- /* skincare range-area design */
-.sr-right-content {
+  }
+  /* favourite-formulation-wp design */
+  .favourite-formulation-wp .ff-content-col {
+    padding-left: calc((100vw - 720px + 1.5rem) / 2);
+    padding-right: calc((100vw - 720px + 1.5rem) / 2);
+  }
+
+  .single-product-card .product-overlay-btn a.addToCard {
+    font-size: 14px;
+  }
+  /* skincare range-area design */
+  .sr-right-content {
+    gap: 26px;
+  }
+
+  /*======= product page design =======*/
+  .single-product-content-wrap {
     padding-right: calc((100vw - 720px) / 2);
     padding-left: calc((100vw - 720px) / 2);
-    gap: 26px;
-}
-
-/*======= product page design =======*/
-.single-product-content-wrap {
-  padding-right: calc((100vw - 720px) / 2);
-  padding-left: calc((100vw - 720px) / 2);
-  padding-top: 32px;
-}
-/* product-PPslider area design */
-.product-PPslider .swiper {
-   margin-left: calc((100vw - 720px) / 2);
-}
-/* how to use-area design */
-.htu-right-content {
+    padding-top: 32px;
+  }
+  /* product-PPslider area design */
+  .product-PPslider .swiper {
+    margin-left: calc((100vw - 720px) / 2);
+  }
+  /* how to use-area design */
+  .htu-right-content {
     padding-right: calc((100vw - 720px) / 2);
     padding-left: calc((100vw - 720px) / 2);
     padding-bottom: 64px;
-}
-.single-row.single-row-reverse .htu-right-content {
+  }
+  .single-row.single-row-reverse .htu-right-content {
     padding-right: calc((100vw - 720px) / 2);
     padding-left: calc((100vw - 720px) / 2);
+  }
+  .htu-right-content h2 {
+    padding-top: 20px;
+    padding-bottom: 15px;
+  }
 }
-.htu-right-content h2 {
-	padding-top: 20px;
-	padding-bottom: 15px;
-}
-
-
-
-}
-
 
 @media screen and (max-width: 991px) {
-body {
+  body {
     font-size: 14px;
-}
-p {
+  }
+  p {
     line-height: 20px;
-}
-.section-spacer {
-	padding-block: 64px;
-}
-.secondary-heading {
-	font-size: 20px;
-}
+  }
+  .section-spacer {
+    padding-block: 64px;
+  }
+  .secondary-heading {
+    font-size: 20px;
+  }
 
-/* ====== offcanvas design =======*/
-.sidebar {
+  /* ====== offcanvas design =======*/
+  .sidebar {
     right: -382px;
     width: 382px;
     height: 100%;
-}
-.sd-product-single-slide .sd-slide-content {
-	font-size: 12px;
-}
-.product-varients-wrap .product-price,
-.product-varients-wrap .regular-price {
-	font-size: 20px;
-}
-/* favourite-formulation-wp design */
-.ff-content-col {
-	gap: 25px;
-}
-/* discover-cetagory-area design */
-.discover-grid-wrapper {
+  }
+  .sd-product-single-slide .sd-slide-content {
+    font-size: 12px;
+  }
+  .product-varients-wrap .product-price,
+  .product-varients-wrap .regular-price {
+    font-size: 20px;
+  }
+  /* favourite-formulation-wp design */
+  .favourite-formulation-wp .large-space-left {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .favourite-formulation-wp .ff-content-col {
+    gap: 25px;
+  }
+  .favourite-formulation-wp .swiper-pagination__wrapper.spacer-64 {
+    padding-top: 16px;
+  }
+  /* discover-cetagory-area design */
+  .discover-grid-wrapper {
     grid-template-columns: 1fr;
     gap: 5px;
-}
-.discover-single-cetagory {
+  }
+  .discover-single-cetagory {
     border-right: 0px;
-}
-.discover-cetagory-area {
-    padding-top: 0;
-}
-.inner-spacer {
-	padding-block: 32px;
-}
- /* skincare range-area design */
-.sr-left-img {
-	padding-right: 0px;
-}
-.btn-borderd {
+  }
+  .inner-spacer {
+    padding-block: 32px;
+  }
+  /* skincare range-area design */
+  .sr-left-img {
+    padding-right: 0px;
+  }
+  .btn-borderd {
     display: flex;
     justify-content: space-between;
     padding: 16px 30px;
-}
-/* product feature-area design */
-.product-feature-single {
+  }
+  /* product feature-area design */
+  .product-feature-single {
     text-align: left;
-}
-/*======= Collection page design =======*/
-.coll-product-show-wrap .product-img-wrap img {
-	padding-top: 10px;
-}
-.coll-product-show-wrap .product-content {
-	text-align: left;
-}
-.section-spacer-top {
+  }
+  /*======= Collection page design =======*/
+  .coll-product-show-wrap .product-img-wrap img {
+    padding-top: 10px;
+  }
+  .coll-product-show-wrap .product-content {
+    text-align: left;
+  }
+  .section-spacer-top {
     margin-top: 64px;
-}
-/* navbar design */
-.logo-area img {
+  }
+  /* navbar design */
+  .logo-area img {
     max-width: 75px;
-}
+  }
 
-.header-navbar {
+  .header-navbar {
     top: 16px;
-}
-/*======= product page design =======*/
-.single-product-content-wrap .top-contents {
-	gap: 22px;
-}
-.single-product-content-wrap .add-to-cart-btn {
-	padding-block: 32px;
-}
-.tabs-menu {
-	column-gap: 10px;
-}
-.product-viewer-wrap {
-	margin-right: 0px;
-}
-.single-product-view-wrap .product-single-viewer img {
-	width: 40%;
+  }
+  /*======= product page design =======*/
+  .single-product-content-wrap .top-contents {
+    gap: 22px;
+  }
+  .single-product-content-wrap .add-to-cart-btn {
+    padding-block: 32px;
+  }
+  .tabs-menu {
+    column-gap: 10px;
+  }
+  .product-viewer-wrap {
+    margin-right: 0px;
+  }
+  .single-product-view-wrap .product-single-viewer img {
+    width: 40%;
     height: calc(75vh - 42px);
     margin-inline: auto;
-}
-.tab-content {
+  }
+  .tab-content {
     font-size: 14px;
-}
-/* product feature-area design */
-.product-Pfeature .product-feature-wrap {
+  }
+  /* product feature-area design */
+  .product-Pfeature .product-feature-wrap {
     background-color: #fbf9f5;
-}
-/* product-PPslider area design */
-.product-PPslider .pp-product-pagination {
-	bottom: 52px;
-}
-/* how to use-area design */
-.htu-left-video .play-icon a {
-	width: 76px;
-	height: 76px;
-}
-/* Legal page design */
-.condition-left-col h2 {
-	font-size: 32px;
-}
-.condition-content-wrap {
-	padding-top: 160px
-}
-/* faq-page design */
-.condition-right-col .faw-single-rows h2 {
-	text-align: left;
-}
-.condition-right-col .faw-single-rows {
+  }
+  /* product-PPslider area design */
+  .product-PPslider .pp-product-pagination {
+    bottom: 52px;
+  }
+  /* how to use-area design */
+  .htu-left-video .play-icon a {
+    width: 76px;
+    height: 76px;
+  }
+  /* Legal page design */
+  .condition-left-col h2 {
+    font-size: 32px;
+  }
+  .condition-content-wrap {
+    padding-top: 160px;
+  }
+  /* faq-page design */
+  .condition-right-col .faw-single-rows h2 {
+    text-align: left;
+  }
+  .condition-right-col .faw-single-rows {
     grid-template-columns: 1fr;
+  }
 }
-
-
-}
-
 
 /*
 ====================================
@@ -324,157 +328,168 @@ Xtra Small Screen - Small Mobile
 ====================================
 */
 @media screen and (max-width: 767px) {
-.gap-x-40 {
+  /* global style */
+  .large-space-right {
+    padding-right: calc((var(--full-width) - 540px + var(--inline-padding)) / 2);
+    padding-left: calc((var(--full-width) - 540px + var(--inline-padding)) / 2);
+  }
+  .large-space-left {
+    padding-left: calc((var(--full-width) - 540px + var(--inline-padding)) / 2);
+    padding-right: calc((var(--full-width) - 540px + var(--inline-padding)) / 2);
+  }
+  .gap-x-40 {
     row-gap: 32px;
-}
-.header-navbar .navbar-inner {
-	padding: 12px;
-}
-.header-top-bar-inner {
+  }
+
+  /* header top bar */
+  .header-top-bar-inner {
     justify-content: space-between;
-}
-.header-hero-content .inner-content h2 {
+  }
+  /* header nav bar */
+  .header-navbar .navbar-inner {
+    padding: 12px;
+  }
+  /* hero banner */
+  .header-hero-content .inner-content h2 {
     font-size: 48px;
-}
-.header-hero-content .inner-content p br {
+  }
+  .header-hero-content .inner-content p br {
     display: none;
-}
-.header-hero-wrap .home-header-media-wrapper {
+  }
+  .header-hero-wrap .home-header-media-wrapper {
     height: 75vh;
-}
-.header-hero-wrap .home-header-media-wrapper img {
+  }
+  .header-hero-wrap .home-header-media-wrapper img {
     height: 100%;
     object-position: 35% 100%;
-}
-/* favourite-formulation-wp design */
-.favourite-formulation-wp .swiper-pagination {
-    max-width: 510px;
-}
-.single-product-card .product-overlay-btn a.addToCard {
-	font-size: 14px;
-}
-/* discover-cetagory-area design */
-.discover-cetagory-area {
-    padding-top: 0;
-    margin-top: -40px;
-}
-.d-signle-cetagory-img img {
+  }
+  /* favourite-formulation-wp design */
+  .favourite-formulation-wp .ff-content-col {
+    padding-left: calc((100vw - 540px + 1.5rem) / 2);
+    padding-right: calc((100vw - 540px + 1.5rem) / 2);
+  }
+  .single-product-card .product-overlay-btn a.addToCard {
+    font-size: 14px;
+  }
+  /* discover-cetagory-area design */
+  .d-signle-cetagory-img img {
     min-height: 128px;
     object-fit: cover;
-}
- /* skincare range-area design */
-.sr-right-content {
+  }
+  /* skincare range-area design */
+  .sr-right-content {
+    gap: 26px;
+  }
+  /*======= product page design =======*/
+  .single-product-content-wrap {
     padding-right: calc((100vw - 540px) / 2);
     padding-left: calc((100vw - 540px) / 2);
-    gap: 26px;
-}
-/*======= product page design =======*/
-.single-product-content-wrap {
-  padding-right: calc((100vw - 540px) / 2);
-  padding-left: calc((100vw - 540px) / 2);
-  padding-top: 32px;
-}
-.single-product-content-wrap .add-to-cart-btn a {
-	padding: 15px 20px;
-	font-size: 14px;
-}
-.tabs-menu {
-	margin-bottom: 15px;
+    padding-top: 32px;
+  }
+  .single-product-content-wrap .add-to-cart-btn a {
+    padding: 15px 20px;
+    font-size: 14px;
+  }
+  .tabs-menu {
+    margin-bottom: 15px;
     padding-bottom: 7px;
     border: 0;
-}
-/* product-PPslider area design */
-.product-PPslider .swiper {
-   margin-left: calc((100vw - 540px) / 2);
-}
+  }
+  /* product-PPslider area design */
+  .product-PPslider .swiper {
+    margin-left: calc((100vw - 540px) / 2);
+  }
 
-/* how to use-area design */
-.htu-right-content {
+  /* how to use-area design */
+  .htu-right-content {
     padding-right: calc((100vw - 540px) / 2);
     padding-left: calc((100vw - 540px) / 2);
     padding-bottom: 50px;
-}
-.single-row.single-row-reverse .htu-right-content {
+  }
+  .single-row.single-row-reverse .htu-right-content {
     padding-right: calc((100vw - 540px) / 2);
     padding-left: calc((100vw - 540px) / 2);
-}
-.htu-right-content h2 {
-	padding-top: 20px;
-	padding-bottom: 15px;
-}
-.how-to-use-wrap {
+  }
+  .htu-right-content h2 {
+    padding-top: 20px;
+    padding-bottom: 15px;
+  }
+  .how-to-use-wrap {
     margin-bottom: -40px;
+  }
+  /* review-area design */
+  .custo-review-main-cont .custo-profile {
+    flex: 0 0 80px;
+    width: 80px;
+  }
+  .review-top-content {
+    gap: 18px;
+    padding-bottom: 36px;
+  }
 }
-/* review-area design */
-.custo-review-main-cont .custo-profile {
-	flex: 0 0 80px;
-	width: 80px;
-}
-.review-top-content {
-	gap: 18px;
-	padding-bottom: 36px;
-}
-
-
-}
-
-
 
 @media screen and (max-width: 575px) {
+  /* global css */
+  .large-space-right {
+    padding-right: calc(var(--inline-padding) / 2);
+    padding-left: calc(var(--inline-padding) / 2);
+  }
+  .large-space-left {
+    padding-left: calc(var(--inline-padding) / 2);
+    padding-right: calc(var(--inline-padding) / 2);
+  }
 
-.section-spacer {
-	padding-block: 50px;
-}
-.favourite-formulation-wp .swiper-pagination {
-    max-width: calc(100% - 30px);
-}
-.single-product-card .product-overlay-btn a.addToCard {
-	padding: 12px 26px;
-}
-.single-product-card .product-overlay-btn {
-	padding: 0 14px;
-}
-.single-product-card .product-img-wrap:hover .product-overlay-btn {
+  /* favourite-formulation-wp design */
+  .favourite-formulation-wp .large-space-left {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .favourite-formulation-wp .ff-content-col {
+    padding-left: calc(var(--inline-padding) / 2);
+    padding-right: calc(var(--inline-padding) / 2);
+  }
+  .single-product-card .product-overlay-btn a.addToCard {
+    padding: 12px 26px;
+  }
+  .single-product-card .product-overlay-btn {
+    padding: 0 14px;
+  }
+  .single-product-card .product-img-wrap:hover .product-overlay-btn {
     bottom: 14px;
-}
-/* discover-cetagory-area design */
-.discover-cetagory-area {
-    padding-top: 0;
-}
-/* skincare range-area design */
-.sr-right-content {
+  }
+
+  /* skincare range-area design */
+  .sr-right-content {
+    gap: 26px;
+  }
+  /*======= Collection page design =======*/
+  .section-spacer-top {
+    margin-top: 45px;
+  }
+  /* navbar  */
+  .logo-area img {
+    max-width: 62px;
+  }
+  .offcanvas-header a img {
+    max-width: 62px;
+  }
+
+  /*======= product page design =======*/
+  .single-product-content-wrap {
     padding-right: 16px;
     padding-left: 16px;
-    gap: 26px;
-}
-/*======= Collection page design =======*/
-.section-spacer-top {
-    margin-top: 45px;
-}
-/* navbar  */
-.logo-area img {
-	max-width: 62px;
-}
-.offcanvas-header a img {
-	max-width: 62px;
-}
-
-/*======= product page design =======*/
-.single-product-content-wrap {
-   padding-right: 16px;
-    padding-left: 16px;
-}
-.single-product-view-wrap .product-single-viewer img {
+  }
+  .single-product-view-wrap .product-single-viewer img {
     height: calc(65vh - 42px);
-}
-.tabs-menu {
-	overflow: auto;
-}
-.tabs-menu li {
+  }
+  .tabs-menu {
+    overflow: auto;
+  }
+  .tabs-menu li {
     text-wrap: nowrap;
-}
-/* brand logo slide */
-.brands-logos-inner {
+  }
+  /* brand logo slide */
+  .brands-logos-inner {
     animation: scroll-rtl 8s linear infinite;
   }
   .brands-logos-inner.cloned {
@@ -486,7 +501,7 @@ Xtra Small Screen - Small Mobile
   }
 
   .single-logo {
-    flex: 0 0 auto; 
+    flex: 0 0 auto;
     width: auto;
   }
 
@@ -499,32 +514,30 @@ Xtra Small Screen - Small Mobile
     }
   }
 
-/* product-PPslider area design */
-.product-PPslider .swiper {
-   margin-left: 16px;
-}
+  /* product-PPslider area design */
+  .product-PPslider .swiper {
+    margin-left: 16px;
+  }
 
-/* how to use-area design */
-.htu-right-content {
+  /* how to use-area design */
+  .htu-right-content {
     padding-right: 16px;
     padding-left: 16px;
-}
-.single-row.single-row-reverse .htu-right-content {
+  }
+  .single-row.single-row-reverse .htu-right-content {
     padding-right: 16px;
     padding-left: 16px;
-}
-.how-to-use-wrap .effect img {
+  }
+  .how-to-use-wrap .effect img {
     height: 402px !important;
     object-fit: cover;
     object-position: top center;
-}
-/* Legal page design */
-.condition-left-col h2 {
-	font-size: 28px;
-}
-.condition-content-wrap {
-	padding-top: 140px
-}
-
- 
+  }
+  /* Legal page design */
+  .condition-left-col h2 {
+    font-size: 28px;
+  }
+  .condition-content-wrap {
+    padding-top: 140px;
+  }
 }
